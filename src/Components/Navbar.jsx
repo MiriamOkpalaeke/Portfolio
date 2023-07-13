@@ -19,7 +19,7 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink
                 to="/"
-                activeClassName="active"
+                activeclassname="active"
                 className="nav-links"
                 onClick={handleClick}
               >

@@ -14,6 +14,7 @@ body {
   width: 100%;
   height: 100vh;
   font-size: 16px;
+  font-family: serif, sans-serif;
 }
 .pages {
   margin-top: 30%;

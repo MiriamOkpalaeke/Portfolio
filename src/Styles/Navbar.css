@@ -75,14 +75,19 @@
   }
   .nav-menu.active {
     left: 0px;
-    background-color: bisque;
+    background-color: #087eb4fb;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
   }
+  .nav-item:hover::after {
+    width: 100%;
+    background: white;
+  }
   .nav-links {
     padding: 1rem;
     display: table;
+    color: white;
   }
   .nav-icon {
     display: block;
