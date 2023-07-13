@@ -1,0 +1,50 @@
+.About-snippet {
+  padding: 2rem;
+  width: 70%;
+  margin: 20px auto;
+}
+.snippet-text h2 {
+  font-size: 2.5rem;
+  color: #0d1534;
+}
+.snippet-text p {
+  color: #4b5058;
+  font-size: 1.5rem;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+.smiley {
+  margin-left: 8px;
+}
+.about-link {
+  margin: 2.5rem 0;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about {
+  box-shadow: 0 0 10px 1.5px #0550737a;
+  padding: 0.7rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #0d1534;
+  background-color: #087eb41a;
+}
+.about:hover {
+  background-color: #087eb4;
+  color: white;
+}
+
+@media screen and (max-width: 960px) {
+  .About-snippet {
+    width: 100%;
+  }
+  .snippet-text h2 {
+    font-size: 1.5rem;
+  }
+  .snippet-text p {
+    font-size: 1.125rem;
+  }
+}

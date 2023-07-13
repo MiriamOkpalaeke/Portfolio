@@ -1,0 +1,50 @@
+.heroPage-container {
+  margin-bottom: 10px;
+  color: #0d1534;
+  width: 100%;
+}
+.container-2 {
+  padding: 2rem;
+}
+.heroPage-container h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.avatar-img {
+  width: 180px;
+  border-radius: 50%;
+  /* background-color: white; */
+  /* position: relative;
+  animation-name: avatar;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-timing-function: ease;
+  animation-direction: reverse; */
+}
+@keyframes avatar {
+  100% {
+    /* background-color: rgba(186, 185, 185, 0.799); */
+    /* bottom: 50px;
+    left: 0px; */
+  }
+}
+.heroPage-para {
+  font-size: 1.5rem;
+  font-family: serif;
+  color: #4b5058;
+}
+.effect-container {
+  background-color: #087eb41a;
+  padding: 0px 0;
+  height: 100px;
+}
+@media screen and (max-width: 960px) {
+  .heroPage-container h1 {
+    font-size: 2rem;
+  }
+  .heroPage-para {
+    font-size: 1.125rem;
+  }
+}
