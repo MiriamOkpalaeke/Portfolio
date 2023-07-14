@@ -25,10 +25,10 @@ const FeaturedProjects = () => {
           <div className="project-writeup">
             <h3 className="project-heading">Loan Wise</h3>
             <p className="project-text">
-              A team of developers, including myself, designers, and data worked
-              on this project. This is a user-friendly platform that simplifies
-              the loan application process for both borrowers and financial
-              institutions.
+              A team of developers, including myself, designers, and data
+              scientists worked on this project. This is a user-friendly
+              platform that simplifies the loan application process for both
+              borrowers and financial institutions.
             </p>
             <ul className="language">
               <li>REACT JS</li>
@@ -61,7 +61,7 @@ const FeaturedProjects = () => {
             <div className="visit-site">
               <a
                 className="visit-link"
-                href="https://netflix-clone-beginner.netlify.app"
+                href="https://net-clone-project.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
