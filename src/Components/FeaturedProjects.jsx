@@ -51,8 +51,9 @@ const FeaturedProjects = () => {
           <div className="project-writeup">
             <h3 className="project-heading">Netflix Clone</h3>
             <p className="project-text">
-              This is my one of my first project when I started my training at
-              Stutern. This netflix clone was built with HTML and CSS.
+              This is one of my first project when I started my training at
+              Stutern. This netflix landing page clone was built with HTML and
+              CSS.
             </p>
             <ul className="language">
               <li>HTML</li>
