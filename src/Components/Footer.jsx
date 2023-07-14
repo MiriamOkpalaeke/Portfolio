@@ -19,6 +19,7 @@ const Footer = () => {
             className="social-link"
             href="https://github.com/MiriamOkpalaeke"
             target="_blank"
+            rel="noreferrer"
           >
             <i className="fa-brands fa-github fa-2xl"></i>
           </a>
@@ -26,6 +27,7 @@ const Footer = () => {
             className="social-link"
             href="https://www.linkedin.com/in/miriam-chinonso-umunnakwe-okpalaeke"
             target="_blank"
+            rel="noreferrer"
           >
             <i className="fa-brands fa-linkedin fa-2xl"></i>
           </a>
@@ -33,6 +35,7 @@ const Footer = () => {
             className="social-link"
             href="https://twitter.com/MiriamOkpalaeke"
             target="_blank"
+            rel="noreferrer"
           >
             <i className="fa-brands fa-square-twitter fa-2xl"></i>
           </a>
@@ -40,6 +43,7 @@ const Footer = () => {
             className="social-link"
             href="https://www.instagram.com/mireille_nonso/"
             target="_blank"
+            rel="noreferrer"
           >
             <i className="fa-brands fa-square-instagram fa-2xl"></i>
           </a>

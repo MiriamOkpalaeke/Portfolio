@@ -39,6 +39,7 @@ const FeaturedProjects = () => {
                 className="visit-link"
                 href="https://loan-wise-dev.netlify.app"
                 target="_blank"
+                rel="noreferrer"
               >
                 Visit Site
               </a>
@@ -62,6 +63,7 @@ const FeaturedProjects = () => {
                 className="visit-link"
                 href="https://netflix-clone-beginner.netlify.app"
                 target="_blank"
+                rel="noreferrer"
               >
                 Visit Site
               </a>
