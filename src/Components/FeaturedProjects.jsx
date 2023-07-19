@@ -53,7 +53,7 @@ const FeaturedProjects = () => {
             <p className="project-text">
               This is one of my first project when I started my training at
               Stutern. This netflix landing page clone was built with HTML and
-              CSS.
+              CSS and it is responsive on both mobile and desktop.
             </p>
             <ul className="language">
               <li>HTML</li>

@@ -19,6 +19,7 @@
   padding: 0 1rem;
   margin-left: 1rem;
 }
+
 .project-snippet {
   width: 500px;
 }
@@ -32,6 +33,13 @@
   font-size: 1.25rem;
   color: #4b5058;
 }
+.projects-text {
+  font-size: 1.5rem;
+
+  color: #4b5058;
+  margin-bottom: 1.5rem;
+}
+
 .demarcation {
   border-bottom: 1.5px dashed #05507336;
 }
@@ -64,6 +72,7 @@
   color: #4b5058;
   font-size: 0.875rem;
 }
+
 @media screen and (max-width: 960px) {
   .featured-text h2 {
     font-size: 1.7rem;
@@ -80,5 +89,155 @@
   }
   .project-heading {
     font-size: 1.3rem;
+  }
+}
+/* project page styling*/
+.projects-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.flex-image {
+  width: 350px;
+  margin: 1rem 0;
+}
+/* .todo-image {
+  width: 350px;
+  height: 200px;
+} */
+.flex-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0d1534;
+}
+.flex-text {
+  color: #4b5058;
+}
+.flex-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.language-2 {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  margin-left: 0.875rem;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.language-2 li {
+  padding-left: 1px;
+  color: #4b5058;
+  font-size: 0.875rem;
+}
+.styling {
+  height: 2px;
+  background-color: #087eb40e;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin: 0.9rem 0;
+}
+.flex-effect {
+  box-shadow: 0 0 10px 4px #087eb433;
+  padding: 0.875rem;
+  border-radius: 8px;
+  /* width: 500px; */
+}
+.flex-effect:hover {
+  box-shadow: 0 0 10px 4px #087eb461;
+}
+.slider {
+  width: 100%;
+  /* text-align: center; */
+  overflow: hidden;
+  scroll-snap-align: center;
+  flex: 1 1 40vw;
+  display: flex;
+  flex-direction: column;
+  min-width: 40vw;
+  box-shadow: 0px 0 10px 1px rgb(0 0 0 / 20%);
+}
+
+.slides {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  flex-direction: row;
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: rgb(208, 207, 207);
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 500px;
+  height: 500px;
+  /* margin-right: 50px; */
+  border-radius: 10px;
+
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 100px; */
+}
+
+/* .author-info .slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+} */
+/* .slider > a:active {
+  top: 1px;
+} */
+.slider > a:focus {
+  background: #000;
+}
+
+/* Don't need button navigation */
+/* @supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+} */
+@media screen and (max-width: 960px) {
+  .slides > div {
+    width: 300px;
+
+    margin-left: 20px;
   }
 }

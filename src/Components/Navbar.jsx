@@ -46,6 +46,17 @@ const Navbar = () => {
                 Projects
               </NavLink>
             </li>
+            {/* <li className="nav-item"></li>
+            <li className="nav-item">
+              <NavLink
+                to="/projectCarousel"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Project2
+              </NavLink>
+            </li> */}
             <li className="nav-item"></li>
           </ul>
 
@@ -55,9 +66,7 @@ const Navbar = () => {
               className={click ? "fas fa-times" : "fa-sharp fa-solid fa-bars"}
             ></i>
           </div>
-          <div className="theme">
-            <Theme />
-          </div>
+          <div className="theme">{/* <Theme /> */}</div>
         </div>
       </nav>
     </>
