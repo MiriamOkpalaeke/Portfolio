@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Styles/Navbar.css";
 import { NavLink } from "react-router-dom";
-import Theme from "./Theme";
+// import Theme from "./Theme";
 
 const Navbar = () => {
   //handling the close button for mobile view

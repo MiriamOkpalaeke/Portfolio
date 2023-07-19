@@ -115,6 +115,7 @@
 }
 .flex-text {
   color: #4b5058;
+  width: 340px;
 }
 .flex-btn {
   display: flex;
