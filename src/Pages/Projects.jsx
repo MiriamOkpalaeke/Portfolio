@@ -7,6 +7,7 @@ import Instagram from "../Assets/Instagram.png";
 import TodoApp from "../Assets/TodoApp.png";
 import Google from "../Assets/google.png";
 import Star from "../Assets/StarWar.png";
+import contact from "../Assets/contactform.png";
 
 const Projects = () => {
   return (
@@ -73,7 +74,7 @@ const Projects = () => {
                 <img
                   className="flex-image"
                   src={Instagram}
-                  alt="udemy snippet"
+                  alt="instagram snippet"
                 />
                 <p className="flex-heading">Instagram Clone</p>
                 <p className="flex-text">
@@ -152,8 +153,8 @@ const Projects = () => {
             </div>
             <div id="slide-2">
               <div div className="flex-effect">
-                <img className="flex-image" src={Google} alt="udemy snippet" />
-                <p className="flex-heading">Udemy Clone</p>
+                <img className="flex-image" src={Google} alt="google snippet" />
+                <p className="flex-heading">Google search Clone</p>
                 <p className="flex-text">
                   A clone of the desktop view oF Google when Messi is searched.
                 </p>
@@ -165,7 +166,7 @@ const Projects = () => {
                   <div className="visit-site">
                     <a
                       className="visit-link"
-                      href="https://project-ud-clone.netlify.app//"
+                      href="https://google-search-site-project.netlify.app"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -176,7 +177,7 @@ const Projects = () => {
                     <div className="visit-site">
                       <a
                         className="visit-link"
-                        href="https://github.com/MiriamOkpalaeke/udemy-clone-assignment"
+                        href="https://github.com/MiriamOkpalaeke/google-project"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -189,10 +190,14 @@ const Projects = () => {
             </div>
             <div id="slide-2">
               <div div className="flex-effect">
-                <img className="flex-image" src={Netflix} alt="udemy snippet" />
-                <p className="flex-heading">Udemy Clone</p>
+                <img
+                  className="flex-image"
+                  src={Netflix}
+                  alt="netflix snippet"
+                />
+                <p className="flex-heading">Netflix Clone</p>
                 <p className="flex-text">
-                  A clone of the desktop View of Udemy landing Page.
+                  A clone of the home page of Netflix website.
                 </p>
                 <ul className="language-2">
                   <li>HTML</li>
@@ -213,7 +218,7 @@ const Projects = () => {
                     <div className="visit-site">
                       <a
                         className="visit-link"
-                        href="https://github.com/MiriamOkpalaeke/udemy-clone-assignment"
+                        href="https://github.com/MiriamOkpalaeke/Netflix-clone"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -227,10 +232,14 @@ const Projects = () => {
             <div id="slide-3">
               <div id="slide-1">
                 <div div className="flex-effect">
-                  <img className="flex-image" src={Star} alt="udemy snippet" />
+                  <img
+                    className="flex-image"
+                    src={Star}
+                    alt="starwars snippet"
+                  />
                   <p className="flex-heading">Star Wars</p>
                   <p className="flex-text">
-                    A clone of the desktop View of Udemy landing Page.
+                    A clone of the star wars page by fetching data from an API.
                   </p>
                   <ul className="language-2">
                     <li>REACT</li>
@@ -240,7 +249,7 @@ const Projects = () => {
                     <div className="visit-site">
                       <a
                         className="visit-link"
-                        href="https://project-ud-clone.netlify.app//"
+                        href="shttps://mi-starwars-api-task.netlify.app"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -251,7 +260,7 @@ const Projects = () => {
                       <div className="visit-site">
                         <a
                           className="visit-link"
-                          href="https://github.com/MiriamOkpalaeke/udemy-clone-assignment"
+                          href="https://github.com/MiriamOkpalaeke/Starwars-film-API-Assignment"
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -266,20 +275,24 @@ const Projects = () => {
             <div id="slide-4">
               <div id="slide-1">
                 <div div className="flex-effect">
-                  <img className="flex-image" src={Udemy} alt="udemy snippet" />
-                  <p className="flex-heading">Udemy Clone</p>
+                  <img
+                    className="flex-image"
+                    src={contact}
+                    alt="udemy snippet"
+                  />
+                  <p className="flex-heading">Contact Form</p>
                   <p className="flex-text">
-                    A clone of the desktop View of Udemy landing Page.
+                    A contact form created using 3rd party library formik.
                   </p>
                   <ul className="language-2">
-                    <li>HTML</li>
+                    <li>REACT</li>
                     <li>CSS</li>
                   </ul>
                   <div className="flex-btn">
                     <div className="visit-site">
                       <a
                         className="visit-link"
-                        href="https://project-ud-clone.netlify.app//"
+                        href="https://contact-form-react-mimi.netlify.app"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -290,7 +303,7 @@ const Projects = () => {
                       <div className="visit-site">
                         <a
                           className="visit-link"
-                          href="https://github.com/MiriamOkpalaeke/udemy-clone-assignment"
+                          href="https://github.com/MiriamOkpalaeke/contact-form-react"
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -310,19 +323,18 @@ const Projects = () => {
                     src={TodoApp}
                     alt="udemy snippet"
                   />
-                  <p className="flex-heading">Udemy Clone</p>
-                  <p className="flex-text">
-                    A clone of the desktop View of Udemy landing Page.
-                  </p>
+                  <p className="flex-heading">Todo APP</p>
+                  <p className="flex-text">A simple Todo list App.</p>
                   <ul className="language-2">
                     <li>HTML</li>
                     <li>CSS</li>
+                    <li>JavaScript</li>
                   </ul>
                   <div className="flex-btn">
                     <div className="visit-site">
                       <a
                         className="visit-link"
-                        href="https://project-ud-clone.netlify.app//"
+                        href="https://simple-todo-list-task.netlify.app/"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -333,7 +345,7 @@ const Projects = () => {
                       <div className="visit-site">
                         <a
                           className="visit-link"
-                          href="https://github.com/MiriamOkpalaeke/udemy-clone-assignment"
+                          href="https://github.com/MiriamOkpalaeke/todo-list"
                           target="_blank"
                           rel="noreferrer"
                         >

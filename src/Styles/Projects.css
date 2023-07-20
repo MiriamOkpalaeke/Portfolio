@@ -241,4 +241,15 @@
 
     margin-left: 20px;
   }
+  .flex-text {
+    color: #4b5058;
+    width: 100%;
+    text-align: center;
+  }
+  .flex-btn {
+    justify-content: center;
+  }
+  .language-2 {
+    justify-content: center;
+  }
 }
