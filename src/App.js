@@ -13,10 +13,10 @@ import { useState } from "react";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    document.body.classList.toggle("dark-mode");
-  };
+  // const toggleDarkMode = () => {
+  //   setDarkMode(!darkMode);
+  //   document.body.classList.toggle("dark-mode");
+  // };
   return (
     <div className={`App ${darkMode ? "dark-mode" : ""}`}>
       <Navbar />
