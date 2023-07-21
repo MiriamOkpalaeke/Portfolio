@@ -11,7 +11,7 @@ import { useState } from "react";
 // import ProjectCarousel from "./Pages/ProjectCarousel";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode] = useState(false);
 
   // const toggleDarkMode = () => {
   //   setDarkMode(!darkMode);
