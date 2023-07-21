@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../Styles/About.css";
+import "../Styles/Theme.css";
 
-const AboutMe = () => {
+const AboutMe = ({ darkMode, toggleDarkMode }) => {
   return (
-    <div className="About-snippet">
+    <div className={`About-snippet ${darkMode ? "dark-mode" : ""}`}>
       <div className="snippet-text">
         <h2>
           Hello, I'm Miriam Okpalaeke

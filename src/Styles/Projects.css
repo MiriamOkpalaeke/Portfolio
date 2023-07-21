@@ -73,24 +73,6 @@
   font-size: 0.875rem;
 }
 
-@media screen and (max-width: 960px) {
-  .featured-text h2 {
-    font-size: 1.7rem;
-  }
-  .project-text {
-    font-size: 1rem;
-    text-align: start;
-  }
-  .project {
-    gap: 2rem;
-  }
-  .project-writeup {
-    margin-left: 0.5rem;
-  }
-  .project-heading {
-    font-size: 1.3rem;
-  }
-}
 /* project page styling*/
 .projects-flex {
   display: flex;
@@ -104,10 +86,7 @@
   width: 350px;
   margin: 1rem 0;
 }
-/* .todo-image {
-  width: 350px;
-  height: 200px;
-} */
+
 .flex-heading {
   font-size: 1.5rem;
   font-weight: bold;
@@ -115,7 +94,6 @@
 }
 .flex-text {
   color: #4b5058;
-  width: 340px;
 }
 .flex-btn {
   display: flex;
@@ -154,10 +132,8 @@
 }
 .slider {
   width: 100%;
-  /* text-align: center; */
   overflow: hidden;
   scroll-snap-align: center;
-  flex: 1 1 40vw;
   display: flex;
   flex-direction: column;
   min-width: 40vw;
@@ -169,7 +145,7 @@
   align-items: center;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: 10px;
+  gap: 5px;
   flex-direction: row;
 
   scroll-behavior: smooth;
@@ -207,34 +183,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* font-size: 100px; */
 }
 
-/* .author-info .slider > a {
-  display: inline-flex;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: white;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin: 0 0 0.5rem 0;
-  position: relative;
-} */
-/* .slider > a:active {
-  top: 1px;
-} */
 .slider > a:focus {
   background: #000;
 }
 
-/* Don't need button navigation */
-/* @supports (scroll-snap-type) {
-  .slider > a {
-    display: none;
-  }
-} */
 @media screen and (max-width: 960px) {
   .slides > div {
     width: 300px;
@@ -251,5 +205,25 @@
   }
   .language-2 {
     justify-content: center;
+  }
+  .featured-text h2 {
+    text-align: center;
+  }
+
+  .featured-text h2 {
+    font-size: 1.7rem;
+  }
+  .projects-text {
+    font-size: 1.125rem;
+    text-align: center;
+  }
+  .project {
+    gap: 2rem;
+  }
+  .project-writeup {
+    margin-left: 0.5rem;
+  }
+  .project-heading {
+    font-size: 1.3rem;
   }
 }

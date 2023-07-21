@@ -1,9 +1,10 @@
 import React from "react";
 import "../Styles/Footer.css";
+import "../Styles/Theme.css";
 
-const Footer = () => {
+const Footer = ({ darkMode, toggleDarkMode }) => {
   return (
-    <div className="footer-container">
+    <div className={`footer-container ${darkMode ? "dark-mode" : ""}`}>
       <h3>Contact Me 💬</h3>
       <p>Get in touch with me via email or socials.</p>
       <div className="demarcation2"></div>

@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import LoanWise from "../Assets/loanwise.png";
 import Netflix from "../Assets/Netflix.png";
 import "../Styles/Projects.css";
+import "../Styles/Theme.css";
 
-const FeaturedProjects = () => {
+const FeaturedProjects = ({ darkMode, toggleDarkMode }) => {
   return (
-    <div className="featured-container">
+    <div className={`featured-container ${darkMode ? "dark-mode" : ""}`}>
       <div className="featured-text">
         <h2>
           Featured Projects

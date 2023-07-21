@@ -16,7 +16,7 @@ const About = () => {
             design and development dates back to my time in college when I
             initially experimented with it.
           </p>
-          <p>
+          <p className="abt-p">
             Everything began when I created a blog on Blogger in 2015. But I
             soon realized that the basic aesthetics of the Blogger themes didn't
             support my concept. To develop an original and aesthetically
@@ -26,7 +26,7 @@ const About = () => {
             HTML and CSS properties throughout this process to bring my design
             concepts to life.
           </p>
-          <p>
+          <p className="abt-p">
             While I enjoyed unraveling the logic behind building applications,
             my true passion lay in crafting delightful user experiences. I
             became fascinated with the power of front-end development in shaping
@@ -35,7 +35,7 @@ const About = () => {
             visual elements fascinated me, driving me to refine my skills and
             explore further.
           </p>
-          <p>
+          <p className="abt-p">
             In 2022, I made a significant decision to take my passion for
             front-end development to the next level. I recognized that it was
             time to pivot my career path and fully immerse myself in the world
@@ -43,7 +43,7 @@ const About = () => {
             creative mindset with technical expertise, enabling me to craft
             exceptional digital experiences that captivate and delight users.
           </p>
-          <p>
+          <p className="abt-p">
             Looking ahead, I am excited about the endless possibilities that lie
             before me as a front-end developer. I aim to continuously expand my
             skill set by staying up-to-date with the latest industry trends and
@@ -54,7 +54,7 @@ const About = () => {
             applications that leave a lasting impact on users while pushing the
             boundaries of what is possible in the digital realm.
           </p>
-          <p>Thanks for reading 😊</p>
+          <p className="abt-p">Thanks for reading 😊</p>
         </div>
         <div className="about-image">
           <img className="miriam-image" src={MiriamPics} alt="miriam smiling" />

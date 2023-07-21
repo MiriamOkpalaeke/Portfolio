@@ -1,16 +1,24 @@
 import React, { useState } from "react";
 import "../Styles/Navbar.css";
+import "../Styles/Theme.css";
 import { NavLink } from "react-router-dom";
-// import Theme from "./Theme";
+import Theme from "./Theme";
 
 const Navbar = () => {
   //handling the close button for mobile view
   const [click, setClick] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   const handleClick = () => setClick(!click);
+  // Function to toggle dark mode
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle("dark-mode");
+  };
+
   return (
     <>
-      <nav className="navbar">
+      <nav className={`navbar ${darkMode ? "dark-mode" : ""}`}>
         <div className="nav-container">
           <NavLink to="/" className="nav-logo">
             Miriam Okpalaeke
@@ -66,7 +74,9 @@ const Navbar = () => {
               className={click ? "fas fa-times" : "fa-sharp fa-solid fa-bars"}
             ></i>
           </div>
-          <div className="theme">{/* <Theme /> */}</div>
+          <div className="theme">
+            <Theme darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          </div>
         </div>
       </nav>
     </>

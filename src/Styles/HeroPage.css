@@ -45,8 +45,12 @@
 @media screen and (max-width: 960px) {
   .heroPage-container h1 {
     font-size: 2rem;
+    text-align: center;
   }
   .heroPage-para {
     font-size: 1.125rem;
+  }
+  .avatar-img {
+    margin: 0 auto;
   }
 }

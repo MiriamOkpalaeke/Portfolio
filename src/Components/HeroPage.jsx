@@ -2,9 +2,9 @@ import React from "react";
 import Avatar from "../Assets/MiriamAvatar-removebg-preview.png";
 import "../Styles/HeroPage.css";
 
-const HeroPage = () => {
+const HeroPage = ({ darkMode, toggleDarkMode }) => {
   return (
-    <div className="heroPage-container">
+    <div className={`heroPage-container ${darkMode ? "dark-mode" : ""}`}>
       <div className="container-2">
         <div className="avatar">
           <img className=" avatar-img" src={Avatar} alt="Miriam avatar" wid />

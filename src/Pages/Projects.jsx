@@ -9,9 +9,9 @@ import Google from "../Assets/google.png";
 import Star from "../Assets/StarWar.png";
 import contact from "../Assets/contactform.png";
 
-const Projects = () => {
+const Projects = ({ darkMode, toggleDarkMode }) => {
   return (
-    <div className="featured-container">
+    <div className={`featured-container ${darkMode ? "dark-mode" : ""}`}>
       <div className="featured-text">
         <h2>
           Projects
@@ -24,19 +24,13 @@ const Projects = () => {
       </div>
       <div className="projects-container">
         <div class="slider">
-          {/* <a href="#slide-1">1</a>
-        <a href="#slide-2">2</a>
-        <a href="#slide-3">3</a>
-        <a href="#slide-4">4</a>
-        <a href="#slide-5">5</a> */}
-
           <div class="slides">
             <div id="slide-1">
               <div div className="flex-effect">
                 <img className="flex-image" src={Udemy} alt="udemy snippet" />
                 <p className="flex-heading">Udemy Clone</p>
                 <p className="flex-text">
-                  A clone of the desktop View of Udemy landing Page.
+                  The desktop View of Udemy Home Page.
                 </p>
                 <ul className="language-2">
                   <li>HTML</li>
@@ -78,7 +72,7 @@ const Projects = () => {
                 />
                 <p className="flex-heading">Instagram Clone</p>
                 <p className="flex-text">
-                  A clone of the desktop View of Instagram home page.
+                  The desktop View of Instagram home page.
                 </p>
                 <ul className="language-2">
                   <li>HTML</li>
@@ -110,7 +104,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            <div id="slide-2">
+            <div id="slide-1">
               <div div className="flex-effect">
                 <img
                   className="flex-image"
@@ -156,7 +150,7 @@ const Projects = () => {
                 <img className="flex-image" src={Google} alt="google snippet" />
                 <p className="flex-heading">Google search Clone</p>
                 <p className="flex-text">
-                  A clone of the desktop view oF Google when Messi is searched.
+                  The desktop view of Google when Messi is searched.
                 </p>
                 <ul className="language-2">
                   <li>HTML</li>
@@ -237,7 +231,7 @@ const Projects = () => {
                     src={Star}
                     alt="starwars snippet"
                   />
-                  <p className="flex-heading">Star Wars</p>
+                  <p className="flex-heading">Star Wars </p>
                   <p className="flex-text">
                     A clone of the star wars page by fetching data from an API.
                   </p>
