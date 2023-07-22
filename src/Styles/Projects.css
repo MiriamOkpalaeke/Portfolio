@@ -147,7 +147,6 @@
   scroll-snap-type: x mandatory;
   gap: 5px;
   flex-direction: row;
-
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 
@@ -156,7 +155,7 @@
   scroll-snap-type: mandatory;
   */
 }
-.slides::-webkit-scrollbar {
+/* .slides::-webkit-scrollbar {
   width: 10px;
   height: 8px;
 }
@@ -166,7 +165,7 @@
 }
 .slides::-webkit-scrollbar-track {
   background: transparent;
-}
+} */
 .slides > div {
   scroll-snap-align: start;
   flex-shrink: 0;
@@ -225,5 +224,6 @@
   }
   .project-heading {
     font-size: 1.3rem;
+    text-align: center;
   }
 }
