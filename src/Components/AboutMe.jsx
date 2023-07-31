@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../Styles/About.css";
 import "../Styles/Theme.css";
+import { motion } from "framer-motion";
 
 const AboutMe = ({ darkMode, toggleDarkMode }) => {
   return (
@@ -23,11 +24,11 @@ const AboutMe = ({ darkMode, toggleDarkMode }) => {
           </Link>
         </div> */}
       </div>
-      <div className="about-link">
+      <motion.div className="about-link" whileHover={{ scale: 1.1 }}>
         <Link className="about" to="/about">
           More About Me
         </Link>
-      </div>
+      </motion.div>
     </div>
   );
 };

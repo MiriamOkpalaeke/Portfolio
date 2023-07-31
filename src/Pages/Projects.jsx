@@ -8,6 +8,7 @@ import TodoApp from "../Assets/TodoApp.png";
 import Google from "../Assets/google.png";
 import Star from "../Assets/StarWar.png";
 import contact from "../Assets/contactform.png";
+import { motion } from "framer-motion";
 
 const Projects = ({ darkMode, toggleDarkMode }) => {
   return (
@@ -22,10 +23,15 @@ const Projects = ({ darkMode, toggleDarkMode }) => {
           front-end development:
         </p>
       </div>
-      <div className="projects-container">
+      <motion.div
+        className="projects-container"
+        initial={{ x: "100vw" }}
+        animate={{ x: 0 }}
+        transition={{ type: "spring", delay: 0.5 }}
+      >
         <div class="slider">
           <div class="slides">
-            <div id="slide-1">
+            <motion.div id="slide-1" whileHover={{ scale: 1.1 }}>
               <div div className="flex-effect">
                 <img className="flex-image" src={Udemy} alt="udemy snippet" />
                 <p className="flex-heading">Udemy Clone</p>
@@ -61,9 +67,9 @@ const Projects = ({ darkMode, toggleDarkMode }) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div id="slide-2">
+            <motion.div id="slide-2" whileHover={{ scale: 1.1 }}>
               <div div className="flex-effect">
                 <img
                   className="flex-image"
@@ -103,8 +109,8 @@ const Projects = ({ darkMode, toggleDarkMode }) => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="slide-1">
+            </motion.div>
+            <motion.div id="slide-3" whileHover={{ scale: 1.1 }}>
               <div div className="flex-effect">
                 <img
                   className="flex-image"
@@ -144,8 +150,8 @@ const Projects = ({ darkMode, toggleDarkMode }) => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="slide-2">
+            </motion.div>
+            <motion.div id="slide-4" whileHover={{ scale: 1.1 }}>
               <div div className="flex-effect">
                 <img className="flex-image" src={Google} alt="google snippet" />
                 <p className="flex-heading">Google search Clone</p>
@@ -181,8 +187,8 @@ const Projects = ({ darkMode, toggleDarkMode }) => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="slide-2">
+            </motion.div>
+            <motion.div id="slide-5" whileHover={{ scale: 1.1 }}>
               <div div className="flex-effect">
                 <img
                   className="flex-image"
@@ -222,138 +228,123 @@ const Projects = ({ darkMode, toggleDarkMode }) => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="slide-3">
-              <div id="slide-1">
-                <div div className="flex-effect">
-                  <img
-                    className="flex-image"
-                    src={Star}
-                    alt="starwars snippet"
-                  />
-                  <p className="flex-heading">Star Wars </p>
-                  <p className="flex-text">
-                    A clone of the star wars page by fetching data from an API.
-                  </p>
-                  <ul className="language-2">
-                    <li>REACT</li>
-                    <li>CSS</li>
-                  </ul>
-                  <div className="flex-btn">
+            </motion.div>
+
+            <motion.div id="slide-6" whileHover={{ scale: 1.1 }}>
+              <div div className="flex-effect">
+                <img className="flex-image" src={Star} alt="starwars snippet" />
+                <p className="flex-heading">Star Wars </p>
+                <p className="flex-text">
+                  A clone of the star wars page by fetching data from an API.
+                </p>
+                <ul className="language-2">
+                  <li>REACT</li>
+                  <li>CSS</li>
+                </ul>
+                <div className="flex-btn">
+                  <div className="visit-site">
+                    <a
+                      className="visit-link"
+                      href="shttps://mi-starwars-api-task.netlify.app"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Visit Site
+                    </a>
+                  </div>
+                  <div className="source-code">
                     <div className="visit-site">
                       <a
                         className="visit-link"
-                        href="shttps://mi-starwars-api-task.netlify.app"
+                        href="https://github.com/MiriamOkpalaeke/Starwars-film-API-Assignment"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Visit Site
+                        View Code
                       </a>
-                    </div>
-                    <div className="source-code">
-                      <div className="visit-site">
-                        <a
-                          className="visit-link"
-                          href="https://github.com/MiriamOkpalaeke/Starwars-film-API-Assignment"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          View Code
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="slide-4">
-              <div id="slide-1">
-                <div div className="flex-effect">
-                  <img
-                    className="flex-image"
-                    src={contact}
-                    alt="udemy snippet"
-                  />
-                  <p className="flex-heading">Contact Form</p>
-                  <p className="flex-text">
-                    A contact form created using 3rd party library formik.
-                  </p>
-                  <ul className="language-2">
-                    <li>REACT</li>
-                    <li>CSS</li>
-                  </ul>
-                  <div className="flex-btn">
+            </motion.div>
+
+            <motion.div id="slide-7" whileHover={{ scale: 1.1 }}>
+              <div div className="flex-effect">
+                <img className="flex-image" src={contact} alt="udemy snippet" />
+                <p className="flex-heading">Contact Form</p>
+                <p className="flex-text">
+                  A contact form created using 3rd party library formik.
+                </p>
+                <ul className="language-2">
+                  <li>REACT</li>
+                  <li>CSS</li>
+                </ul>
+                <div className="flex-btn">
+                  <div className="visit-site">
+                    <a
+                      className="visit-link"
+                      href="https://contact-form-react-mimi.netlify.app"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Visit Site
+                    </a>
+                  </div>
+                  <div className="source-code">
                     <div className="visit-site">
                       <a
                         className="visit-link"
-                        href="https://contact-form-react-mimi.netlify.app"
+                        href="https://github.com/MiriamOkpalaeke/contact-form-react"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Visit Site
+                        View Code
                       </a>
-                    </div>
-                    <div className="source-code">
-                      <div className="visit-site">
-                        <a
-                          className="visit-link"
-                          href="https://github.com/MiriamOkpalaeke/contact-form-react"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          View Code
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="slide-5">
-              <div id="slide-1">
-                <div div className="flex-effect">
-                  <img
-                    className="flex-image"
-                    src={TodoApp}
-                    alt="udemy snippet"
-                  />
-                  <p className="flex-heading">Todo APP</p>
-                  <p className="flex-text">A simple Todo list App.</p>
-                  <ul className="language-2">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                  </ul>
-                  <div className="flex-btn">
+            </motion.div>
+
+            <motion.div id="slide-8" whileHover={{ scale: 1.1 }}>
+              <div div className="flex-effect">
+                <img className="flex-image" src={TodoApp} alt="udemy snippet" />
+                <p className="flex-heading">Todo APP</p>
+                <p className="flex-text">A simple Todo list App.</p>
+                <ul className="language-2">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div className="flex-btn">
+                  <div className="visit-site">
+                    <a
+                      className="visit-link"
+                      href="https://simple-todo-list-task.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Visit Site
+                    </a>
+                  </div>
+                  <div className="source-code">
                     <div className="visit-site">
                       <a
                         className="visit-link"
-                        href="https://simple-todo-list-task.netlify.app/"
+                        href="https://github.com/MiriamOkpalaeke/todo-list"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Visit Site
+                        View Code
                       </a>
-                    </div>
-                    <div className="source-code">
-                      <div className="visit-site">
-                        <a
-                          className="visit-link"
-                          href="https://github.com/MiriamOkpalaeke/todo-list"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          View Code
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

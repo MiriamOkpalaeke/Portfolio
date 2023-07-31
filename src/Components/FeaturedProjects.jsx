@@ -4,6 +4,7 @@ import LoanWise from "../Assets/loanwise.png";
 import Netflix from "../Assets/Netflix.png";
 import "../Styles/Projects.css";
 import "../Styles/Theme.css";
+import { motion } from "framer-motion";
 
 const FeaturedProjects = ({ darkMode, toggleDarkMode }) => {
   return (
@@ -80,11 +81,11 @@ const FeaturedProjects = ({ darkMode, toggleDarkMode }) => {
           </div>
         </div>
       </div>
-      <div className="about-link">
+      <motion.div className="about-link" whileHover={{ scale: 1.1 }}>
         <Link className="about" to="/projects">
           View All Projects
         </Link>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/About.css";
 import MiriamPics from "../Assets/IMG_9743d (2).jpg";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -56,9 +57,14 @@ const About = () => {
           </p>
           <p className="abt-p">Thanks for reading 😊</p>
         </div>
-        <div className="about-image">
+        <motion.div
+          className="about-image"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 2 }}
+          transition={{ delay: 1, duration: 2 }}
+        >
           <img className="miriam-image" src={MiriamPics} alt="miriam smiling" />
-        </div>
+        </motion.div>
       </div>
       <div className="skills-flex">
         <h3>SKILLS</h3>
@@ -70,7 +76,7 @@ const About = () => {
           <div>REACT</div>
         </div>
       </div>
-      <div className="about-link">
+      <motion.div className="about-link" whileHover={{ scale: 1.1 }}>
         <a
           className="about"
           href="https://drive.google.com/file/d/1YU5Dofy1ma5ZaGAGHEHwC1hKbWj8bicN/view?usp=sharing"
@@ -79,7 +85,7 @@ const About = () => {
         >
           DOWNLOAD RESUME
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 };
