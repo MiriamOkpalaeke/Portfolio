@@ -24,8 +24,11 @@ const AboutMe = ({ darkMode, toggleDarkMode }) => {
           </Link>
         </div> */}
       </div>
-      <motion.div className="about-link" whileHover={{ scale: 1.1 }}>
-        <Link className="about" to="/about">
+      <motion.div
+        className={`about-link ${darkMode ? "dark-mode" : ""}`}
+        whileHover={{ scale: 1.1 }}
+      >
+        <Link className={`about ${darkMode ? "dark-mode" : ""}`} to="/about">
           More About Me
         </Link>
       </motion.div>

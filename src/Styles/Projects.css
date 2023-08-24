@@ -125,36 +125,19 @@
   box-shadow: 0 0 10px 4px #087eb433;
   padding: 0.875rem;
   border-radius: 8px;
-  /* width: 500px; */
+  margin: 20px 40px 10px 10px;
+  height: 100%;
+  max-height: 800px;
 }
 .flex-effect:hover {
   box-shadow: 0 0 10px 4px #087eb461;
 }
 .slider {
   width: 100%;
-  overflow: hidden;
-  scroll-snap-align: center;
-  display: flex;
-  flex-direction: column;
-  min-width: 40vw;
+  padding: 20px;
   box-shadow: 0px 0 10px 1px rgb(0 0 0 / 20%);
 }
 
-.slides {
-  display: flex;
-  align-items: center;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 5px;
-  flex-direction: row;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-
-  /*
-  scroll-snap-points-x: repeat(300px);
-  scroll-snap-type: mandatory;
-  */
-}
 /* .slides::-webkit-scrollbar {
   width: 10px;
   height: 8px;
@@ -166,12 +149,12 @@
 .slides::-webkit-scrollbar-track {
   background: transparent;
 } */
-.slides > div {
+/* .slides > div {
   scroll-snap-align: start;
   flex-shrink: 0;
   width: 500px;
   height: 500px;
-  /* margin-right: 50px; */
+  margin-right: 50px;
   border-radius: 10px;
 
   transform-origin: center center;
@@ -182,18 +165,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .slider > a:focus {
   background: #000;
 }
 
 @media screen and (max-width: 960px) {
-  .slides > div {
+  /* .slides > div {
     width: 300px;
 
     margin-left: 20px;
-  }
+  } */
   .flex-text {
     color: #4b5058;
     width: 100%;
@@ -225,5 +208,10 @@
   .project-heading {
     font-size: 1.3rem;
     text-align: center;
+  }
+  .flex-effect {
+    margin: 5px 10px 5px 10px;
+    height: 100%;
+    max-height: 800px;
   }
 }

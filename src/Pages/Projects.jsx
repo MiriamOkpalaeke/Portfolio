@@ -1,5 +1,8 @@
 import React from "react";
+import Slider from "react-slick";
 import "../Styles/Projects.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import LoanWise from "../Assets/loanwise.png";
 import Netflix from "../Assets/Netflix.png";
 import Udemy from "../Assets/udemy.png";
@@ -11,6 +14,31 @@ import contact from "../Assets/contactform.png";
 import { motion } from "framer-motion";
 
 const Projects = ({ darkMode, toggleDarkMode }) => {
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 960,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <div className={`featured-container ${darkMode ? "dark-mode" : ""}`}>
       <div className="featured-text">
@@ -28,9 +56,10 @@ const Projects = ({ darkMode, toggleDarkMode }) => {
         initial={{ x: "100vw" }}
         animate={{ x: 0 }}
         transition={{ type: "spring", delay: 0.5 }}
-      >
-        <div class="slider">
-          <div class="slides">
+      ></motion.div>
+      <div className="slider">
+        <Slider {...settings}>
+          <div>
             <motion.div id="slide-1" whileHover={{ scale: 1.1 }}>
               <div div className="flex-effect">
                 <img className="flex-image" src={Udemy} alt="udemy snippet" />
@@ -68,7 +97,8 @@ const Projects = ({ darkMode, toggleDarkMode }) => {
                 </div>
               </div>
             </motion.div>
-
+          </div>
+          <div>
             <motion.div id="slide-2" whileHover={{ scale: 1.1 }}>
               <div div className="flex-effect">
                 <img
@@ -110,6 +140,8 @@ const Projects = ({ darkMode, toggleDarkMode }) => {
                 </div>
               </div>
             </motion.div>
+          </div>
+          <div>
             <motion.div id="slide-3" whileHover={{ scale: 1.1 }}>
               <div div className="flex-effect">
                 <img
@@ -151,6 +183,8 @@ const Projects = ({ darkMode, toggleDarkMode }) => {
                 </div>
               </div>
             </motion.div>
+          </div>
+          <div>
             <motion.div id="slide-4" whileHover={{ scale: 1.1 }}>
               <div div className="flex-effect">
                 <img className="flex-image" src={Google} alt="google snippet" />
@@ -188,6 +222,8 @@ const Projects = ({ darkMode, toggleDarkMode }) => {
                 </div>
               </div>
             </motion.div>
+          </div>
+          <div>
             <motion.div id="slide-5" whileHover={{ scale: 1.1 }}>
               <div div className="flex-effect">
                 <img
@@ -197,7 +233,7 @@ const Projects = ({ darkMode, toggleDarkMode }) => {
                 />
                 <p className="flex-heading">Netflix Clone</p>
                 <p className="flex-text">
-                  A clone of the home page of Netflix website.
+                  A clone of a responsive home page of Netflix website.
                 </p>
                 <ul className="language-2">
                   <li>HTML</li>
@@ -229,7 +265,8 @@ const Projects = ({ darkMode, toggleDarkMode }) => {
                 </div>
               </div>
             </motion.div>
-
+          </div>
+          <div>
             <motion.div id="slide-6" whileHover={{ scale: 1.1 }}>
               <div div className="flex-effect">
                 <img className="flex-image" src={Star} alt="starwars snippet" />
@@ -267,7 +304,8 @@ const Projects = ({ darkMode, toggleDarkMode }) => {
                 </div>
               </div>
             </motion.div>
-
+          </div>
+          <div>
             <motion.div id="slide-7" whileHover={{ scale: 1.1 }}>
               <div div className="flex-effect">
                 <img className="flex-image" src={contact} alt="udemy snippet" />
@@ -305,12 +343,15 @@ const Projects = ({ darkMode, toggleDarkMode }) => {
                 </div>
               </div>
             </motion.div>
-
+          </div>
+          <div>
             <motion.div id="slide-8" whileHover={{ scale: 1.1 }}>
               <div div className="flex-effect">
                 <img className="flex-image" src={TodoApp} alt="udemy snippet" />
                 <p className="flex-heading">Todo APP</p>
-                <p className="flex-text">A simple Todo list App.</p>
+                <p className="flex-text">
+                  A simple Todo list App that helps you plan you daily task.
+                </p>
                 <ul className="language-2">
                   <li>HTML</li>
                   <li>CSS</li>
@@ -343,8 +384,8 @@ const Projects = ({ darkMode, toggleDarkMode }) => {
               </div>
             </motion.div>
           </div>
-        </div>
-      </motion.div>
+        </Slider>
+      </div>
     </div>
   );
 };
